@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tvugenap1w80"
-path="res://.godot/imported/char_a_pONE2_1out_fstr_v04.png-0e79084097df78472d9ec09d42c6185a.ctex"
+path="res://.godot/imported/char_a_pONE2_1out_fstr_v04.png-3bddd079ebcffab04ba303f09fe414fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_base/char_a_pONE2/1out/char_a_pONE2_1out_fstr_v04.png"
-dest_files=["res://.godot/imported/char_a_pONE2_1out_fstr_v04.png-0e79084097df78472d9ec09d42c6185a.ctex"]
+source_file="res://models/assets/char_a_pONE2/1out/char_a_pONE2_1out_fstr_v04.png"
+dest_files=["res://.godot/imported/char_a_pONE2_1out_fstr_v04.png-3bddd079ebcffab04ba303f09fe414fc.ctex"]
 
 [params]
 

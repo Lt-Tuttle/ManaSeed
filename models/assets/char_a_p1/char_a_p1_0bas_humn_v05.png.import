@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpvai7cpp2ael"
-path="res://.godot/imported/char_a_p1_0bas_humn_v05.png-ddc4fe953adde5868f46aae2cffaca7b.ctex"
+path="res://.godot/imported/char_a_p1_0bas_humn_v05.png-6d98e39e7fad3da08434d5c26605737e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_base/char_a_p1/char_a_p1_0bas_humn_v05.png"
-dest_files=["res://.godot/imported/char_a_p1_0bas_humn_v05.png-ddc4fe953adde5868f46aae2cffaca7b.ctex"]
+source_file="res://models/assets/char_a_p1/char_a_p1_0bas_humn_v05.png"
+dest_files=["res://.godot/imported/char_a_p1_0bas_humn_v05.png-6d98e39e7fad3da08434d5c26605737e.ctex"]
 
 [params]
 

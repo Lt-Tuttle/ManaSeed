@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddlb2xohp8xs3"
-path="res://.godot/imported/summer water sparkles B 16x16.png-a0c76e8fb6c681b2a4dbb4ec4e18bee4.ctex"
+path="res://.godot/imported/summer water sparkles B 16x16.png-669c85ce1fbe8020c3adc8d7e92c53c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/seasonal water animations/summer water sparkles B 16x16.png"
-dest_files=["res://.godot/imported/summer water sparkles B 16x16.png-a0c76e8fb6c681b2a4dbb4ec4e18bee4.ctex"]
+source_file="res://environment/assets/water_animations/summer water sparkles B 16x16.png"
+dest_files=["res://.godot/imported/summer water sparkles B 16x16.png-669c85ce1fbe8020c3adc8d7e92c53c0.ctex"]
 
 [params]
 

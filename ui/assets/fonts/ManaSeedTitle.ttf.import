@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dhdjljpci8pt8"
-path="res://.godot/imported/ManaSeedTitle.ttf-9940394d20f77ca6003667ba4eab0079.fontdata"
+path="res://.godot/imported/ManaSeedTitle.ttf-ee543cdb9626f61f34ca590ad4783038.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/ManaSeedTitle.ttf"
-dest_files=["res://.godot/imported/ManaSeedTitle.ttf-9940394d20f77ca6003667ba4eab0079.fontdata"]
+source_file="res://ui/assets/fonts/ManaSeedTitle.ttf"
+dest_files=["res://.godot/imported/ManaSeedTitle.ttf-ee543cdb9626f61f34ca590ad4783038.fontdata"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5w4ej4mgaase"
-path="res://.godot/imported/layer order, page ONE-hand 2 (sword).png-cc854b6870d05a6d6d3b85af421b9d7a.ctex"
+path="res://.godot/imported/layer order, page ONE-hand 2 (sword).png-081599c16c60501dc9640d17ffbbc506.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_base/guides/layer order, page ONE-hand 2 (sword).png"
-dest_files=["res://.godot/imported/layer order, page ONE-hand 2 (sword).png-cc854b6870d05a6d6d3b85af421b9d7a.ctex"]
+source_file="res://models/assets/guides/layer order, page ONE-hand 2 (sword).png"
+dest_files=["res://.godot/imported/layer order, page ONE-hand 2 (sword).png-081599c16c60501dc9640d17ffbbc506.ctex"]
 
 [params]
 

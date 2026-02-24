@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5q7jk0ytluwq"
-path="res://.godot/imported/autumn waterfall B 16x16.png-5025846546af3e5a52834702ed080769.ctex"
+path="res://.godot/imported/autumn waterfall B 16x16.png-c4bb9cf85f876f8cd9491f42195a89bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/seasonal water animations/autumn waterfall B 16x16.png"
-dest_files=["res://.godot/imported/autumn waterfall B 16x16.png-5025846546af3e5a52834702ed080769.ctex"]
+source_file="res://environment/assets/water_animations/autumn waterfall B 16x16.png"
+dest_files=["res://.godot/imported/autumn waterfall B 16x16.png-c4bb9cf85f876f8cd9491f42195a89bc.ctex"]
 
 [params]
 

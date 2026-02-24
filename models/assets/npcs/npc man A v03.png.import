@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6iw8203sfdxb"
-path="res://.godot/imported/npc man A v03.png-7fde7e8a981bbae3fe7be9476db41c0c.ctex"
+path="res://.godot/imported/npc man A v03.png-55beecc37543b8954cf70f6655e0a59b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/npcs/npc man A v03.png"
-dest_files=["res://.godot/imported/npc man A v03.png-7fde7e8a981bbae3fe7be9476db41c0c.ctex"]
+source_file="res://models/assets/npcs/npc man A v03.png"
+dest_files=["res://.godot/imported/npc man A v03.png-55beecc37543b8954cf70f6655e0a59b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ieacbodtb64f"
-path="res://.godot/imported/animations, page ONE-hand 3.png-1449306d9bbeacb68e046bbdd05d808c.ctex"
+path="res://.godot/imported/animations, page ONE-hand 3.png-04a4c226886dafd5c0c5164981421627.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_base/guides/animations, page ONE-hand 3.png"
-dest_files=["res://.godot/imported/animations, page ONE-hand 3.png-1449306d9bbeacb68e046bbdd05d808c.ctex"]
+source_file="res://models/assets/guides/animations, page ONE-hand 3.png"
+dest_files=["res://.godot/imported/animations, page ONE-hand 3.png-04a4c226886dafd5c0c5164981421627.ctex"]
 
 [params]
 

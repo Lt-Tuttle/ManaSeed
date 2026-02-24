@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkxkieehkjtkn"
-path="res://.godot/imported/npc woman A v02.png-884f4878849b7aac0813cfa7be48ae1f.ctex"
+path="res://.godot/imported/npc woman A v02.png-110a1f662b83a18c0ec4eab2c5d95785.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/npcs/npc woman A v02.png"
-dest_files=["res://.godot/imported/npc woman A v02.png-884f4878849b7aac0813cfa7be48ae1f.ctex"]
+source_file="res://models/assets/npcs/npc woman A v02.png"
+dest_files=["res://.godot/imported/npc woman A v02.png-110a1f662b83a18c0ec4eab2c5d95785.ctex"]
 
 [params]
 

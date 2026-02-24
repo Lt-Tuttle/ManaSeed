@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dblcjwnqpoegd"
-path="res://.godot/imported/layer order, page ONE-hand 2 (shield).png-cc3995e1267f34355bb8d9d216448950.ctex"
+path="res://.godot/imported/layer order, page ONE-hand 2 (shield).png-7b7b1c359e1673bea4770c874cbf77e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_base/guides/layer order, page ONE-hand 2 (shield).png"
-dest_files=["res://.godot/imported/layer order, page ONE-hand 2 (shield).png-cc3995e1267f34355bb8d9d216448950.ctex"]
+source_file="res://models/assets/guides/layer order, page ONE-hand 2 (shield).png"
+dest_files=["res://.godot/imported/layer order, page ONE-hand 2 (shield).png-7b7b1c359e1673bea4770c874cbf77e7.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bw5g2wtux5o6k"
-path="res://.godot/imported/ManaSeedBody.ttf-b5bfe2a71d1f10f717edaab12d0ba93d.fontdata"
+path="res://.godot/imported/ManaSeedBody.ttf-09316a10926c8ecee26a9c935ce6f5b4.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/ManaSeedBody.ttf"
-dest_files=["res://.godot/imported/ManaSeedBody.ttf-b5bfe2a71d1f10f717edaab12d0ba93d.fontdata"]
+source_file="res://ui/assets/fonts/ManaSeedBody.ttf"
+dest_files=["res://.godot/imported/ManaSeedBody.ttf-09316a10926c8ecee26a9c935ce6f5b4.fontdata"]
 
 [params]
 

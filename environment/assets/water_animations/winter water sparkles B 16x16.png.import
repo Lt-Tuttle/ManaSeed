@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dg38x6voasotq"
-path="res://.godot/imported/winter water sparkles B 16x16.png-d47fe1975124f12dacd90bb95c0ef935.ctex"
+path="res://.godot/imported/winter water sparkles B 16x16.png-1cb2344bd58b26508859f200ad02d13e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/seasonal water animations/winter water sparkles B 16x16.png"
-dest_files=["res://.godot/imported/winter water sparkles B 16x16.png-d47fe1975124f12dacd90bb95c0ef935.ctex"]
+source_file="res://environment/assets/water_animations/winter water sparkles B 16x16.png"
+dest_files=["res://.godot/imported/winter water sparkles B 16x16.png-1cb2344bd58b26508859f200ad02d13e.ctex"]
 
 [params]
 

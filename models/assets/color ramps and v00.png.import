@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d08pxqxqdqwqo"
-path="res://.godot/imported/color ramps and v00.png-3a565883b04fb36c979fd88097a3ec72.ctex"
+path="res://.godot/imported/color ramps and v00.png-615d97492f6833d312062b1dbcf43493.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_base/color ramps and v00.png"
-dest_files=["res://.godot/imported/color ramps and v00.png-3a565883b04fb36c979fd88097a3ec72.ctex"]
+source_file="res://models/assets/color ramps and v00.png"
+dest_files=["res://.godot/imported/color ramps and v00.png-615d97492f6833d312062b1dbcf43493.ctex"]
 
 [params]
 

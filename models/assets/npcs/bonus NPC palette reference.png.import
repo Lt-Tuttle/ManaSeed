@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brd488c1qtwpt"
-path="res://.godot/imported/bonus NPC palette reference.png-73c1ff6bb7dd8c44e74cc3463b75af6e.ctex"
+path="res://.godot/imported/bonus NPC palette reference.png-7ed2029e7877eb74436150d4e96576d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/npcs/bonus NPC palette reference.png"
-dest_files=["res://.godot/imported/bonus NPC palette reference.png-73c1ff6bb7dd8c44e74cc3463b75af6e.ctex"]
+source_file="res://models/assets/npcs/bonus NPC palette reference.png"
+dest_files=["res://.godot/imported/bonus NPC palette reference.png-7ed2029e7877eb74436150d4e96576d5.ctex"]
 
 [params]
 

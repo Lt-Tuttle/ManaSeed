@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fq824itv08sb"
-path="res://.godot/imported/char_a_pONE1_5hat_pnty_v03.png-67f94dab043a6a2062120ba1b05ae3ad.ctex"
+path="res://.godot/imported/char_a_pONE1_5hat_pnty_v03.png-5ef49a5a3f72c3bb6aaa36314a5634f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_base/char_a_pONE1/5hat/char_a_pONE1_5hat_pnty_v03.png"
-dest_files=["res://.godot/imported/char_a_pONE1_5hat_pnty_v03.png-67f94dab043a6a2062120ba1b05ae3ad.ctex"]
+source_file="res://models/assets/char_a_pONE1/5hat/char_a_pONE1_5hat_pnty_v03.png"
+dest_files=["res://.godot/imported/char_a_pONE1_5hat_pnty_v03.png-5ef49a5a3f72c3bb6aaa36314a5634f6.ctex"]
 
 [params]
 
