@@ -18,13 +18,13 @@ extends CharacterBody2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	# Set the parent of each component to this node
 	if movement_component:
 		movement_component.parent = self
 	if input_component:
 		input_component.parent = self
 	if animation_component:
 		animation_component.parent = self
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:

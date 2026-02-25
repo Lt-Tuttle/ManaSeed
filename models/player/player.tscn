@@ -89,13 +89,41 @@ blend_point_3/node = SubResource("AnimationNodeAnimation_xt6n1")
 blend_point_3/pos = Vector2(-1, 0)
 blend_mode = 1
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_sdwco"]
+animation = &"player_base/walk_front"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_01786"]
+animation = &"player_base/walk_back"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_41tbi"]
+animation = &"player_base/walk_right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_u7xd7"]
+animation = &"player_base/walk_left"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_nhr6m"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_sdwco")
+blend_point_0/pos = Vector2(0, 1)
+blend_point_1/node = SubResource("AnimationNodeAnimation_01786")
+blend_point_1/pos = Vector2(0, -1)
+blend_point_2/node = SubResource("AnimationNodeAnimation_41tbi")
+blend_point_2/pos = Vector2(1, 0)
+blend_point_3/node = SubResource("AnimationNodeAnimation_u7xd7")
+blend_point_3/pos = Vector2(-1, 0)
+
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_nhr6m"]
 advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_qrhto"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_j8yfj"]
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_qrhto"]
 states/Idle/node = SubResource("AnimationNodeBlendSpace2D_u7xd7")
 states/Idle/position = Vector2(379.99997, 100.14815)
-transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_nhr6m")]
+states/Walk/node = SubResource("AnimationNodeBlendSpace2D_nhr6m")
+states/Walk/position = Vector2(559, 100)
+transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_nhr6m"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_qrhto"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_j8yfj")]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7t436"]
 size = Vector2(16, 16)
@@ -141,8 +169,10 @@ autoplay = &"player_base/idle_front"
 active = false
 root_node = NodePath("../Sprite2D")
 tree_root = SubResource("AnimationNodeStateMachine_qrhto")
-anim_player = NodePath("../AnimationPlayer")
+libraries/ = SubResource("AnimationLibrary_7t436")
+libraries/player_base = ExtResource("3_tffsb")
 parameters/Idle/blend_position = Vector2(0, 0)
+parameters/Walk/blend_position = Vector2(0, 0)
 
 [node name="MovementComponent" type="Node" parent="." unique_id=185910437]
 script = ExtResource("4_tffsb")
