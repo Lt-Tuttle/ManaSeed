@@ -5,11 +5,12 @@
 [ext_resource type="AnimationLibrary" uid="uid://c3hey2ck2bfwg" path="res://models/player/animations/player_base.tres" id="3_tffsb"]
 [ext_resource type="Script" uid="uid://dq6affhr7e27e" path="res://components/movement_component.gd" id="4_tffsb"]
 [ext_resource type="Script" uid="uid://b7te8ohwum6ao" path="res://components/input_component.gd" id="5_haidl"]
+[ext_resource type="Script" uid="uid://bwmit3nv7bm4m" path="res://components/animation_component.gd" id="6_haidl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_haidl"]
 size = Vector2(12, 10)
 
-[sub_resource type="Animation" id="Animation_7t436"]
+[sub_resource type="Animation" id="Animation_haidl"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -60,32 +61,33 @@ tracks/3/keys = {
 "values": [0]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_u4has"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7t436"]
 _data = {
-&"RESET": SubResource("Animation_7t436")
+&"RESET": SubResource("Animation_haidl")
 }
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xt6n1"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_haidl"]
 animation = &"player_base/idle_front"
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_sdwco"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7t436"]
 animation = &"player_base/idle_back"
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_01786"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_u4has"]
 animation = &"player_base/idle_right"
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_41tbi"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xt6n1"]
 animation = &"player_base/idle_left"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_u7xd7"]
-blend_point_0/node = SubResource("AnimationNodeAnimation_xt6n1")
+blend_point_0/node = SubResource("AnimationNodeAnimation_haidl")
 blend_point_0/pos = Vector2(0, 1)
-blend_point_1/node = SubResource("AnimationNodeAnimation_sdwco")
+blend_point_1/node = SubResource("AnimationNodeAnimation_7t436")
 blend_point_1/pos = Vector2(0, -1)
-blend_point_2/node = SubResource("AnimationNodeAnimation_01786")
+blend_point_2/node = SubResource("AnimationNodeAnimation_u4has")
 blend_point_2/pos = Vector2(1, 0)
-blend_point_3/node = SubResource("AnimationNodeAnimation_41tbi")
+blend_point_3/node = SubResource("AnimationNodeAnimation_xt6n1")
 blend_point_3/pos = Vector2(-1, 0)
+blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_nhr6m"]
 advance_mode = 2
@@ -95,17 +97,32 @@ states/Idle/node = SubResource("AnimationNodeBlendSpace2D_u7xd7")
 states/Idle/position = Vector2(379.99997, 100.14815)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_nhr6m")]
 
-[node name="Player" type="CharacterBody2D" unique_id=1965447241 node_paths=PackedStringArray("movement_component", "input_component")]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7t436"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u4has"]
+size = Vector2(8, 20)
+
+[node name="Player" type="CharacterBody2D" unique_id=1965447241 node_paths=PackedStringArray("movement_component", "input_component", "animation_component", "sprite", "anim_tree", "anim_player", "hitbox", "hitbox_shape", "hurtbox", "hurtbox_shape")]
+motion_mode = 1
 script = ExtResource("1_apye4")
 movement_component = NodePath("MovementComponent")
 input_component = NodePath("InputComponent")
+animation_component = NodePath("AnimationComponent")
+sprite = NodePath("Sprite2D")
+anim_tree = NodePath("AnimationTree")
+anim_player = NodePath("AnimationPlayer")
+hitbox = NodePath("HitBox")
+hitbox_shape = NodePath("HitBox/HitBoxShape")
+hurtbox = NodePath("HurtBox")
+hurtbox_shape = NodePath("HurtBox/HurtboxShape")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1508117266]
 position = Vector2(0, -20)
 zoom = Vector2(2.5, 2.5)
 position_smoothing_enabled = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=73216914]
+[node name="PlayerCollision" type="CollisionShape2D" parent="." unique_id=73216914]
 position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_haidl")
 
@@ -116,22 +133,39 @@ vframes = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=619134230]
 root_node = NodePath("../Sprite2D")
-libraries/ = SubResource("AnimationLibrary_u4has")
+libraries/ = SubResource("AnimationLibrary_7t436")
 libraries/player_base = ExtResource("3_tffsb")
 autoplay = &"player_base/idle_front"
 
 [node name="AnimationTree" type="AnimationTree" parent="." unique_id=995702473]
+active = false
 root_node = NodePath("../Sprite2D")
 tree_root = SubResource("AnimationNodeStateMachine_qrhto")
 anim_player = NodePath("../AnimationPlayer")
 parameters/Idle/blend_position = Vector2(0, 0)
 
-[node name="MovementComponent" type="Node" parent="." unique_id=185910437 node_paths=PackedStringArray("parent")]
+[node name="MovementComponent" type="Node" parent="." unique_id=185910437]
 script = ExtResource("4_tffsb")
-parent = NodePath("..")
 metadata/_custom_type_script = "uid://dq6affhr7e27e"
 
-[node name="InputComponent" type="Node" parent="." unique_id=1269968612 node_paths=PackedStringArray("parent")]
+[node name="InputComponent" type="Node" parent="." unique_id=1269968612]
 script = ExtResource("5_haidl")
-parent = NodePath("..")
 metadata/_custom_type_script = "uid://b7te8ohwum6ao"
+
+[node name="AnimationComponent" type="Node" parent="." unique_id=1457968932]
+script = ExtResource("6_haidl")
+
+[node name="HurtBox" type="Area2D" parent="." unique_id=179072168]
+
+[node name="HurtboxShape" type="CollisionShape2D" parent="HurtBox" unique_id=748412099]
+position = Vector2(0, 15)
+shape = SubResource("RectangleShape2D_7t436")
+disabled = true
+debug_color = Color(0, 0.6468756, 0.23387426, 0.41960785)
+
+[node name="HitBox" type="Area2D" parent="." unique_id=793853396]
+
+[node name="HitBoxShape" type="CollisionShape2D" parent="HitBox" unique_id=1954700411]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_u4has")
+debug_color = Color(1.0039216, 0.36936, 0.30153698, 0.41960785)

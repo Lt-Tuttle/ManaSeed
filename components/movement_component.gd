@@ -1,18 +1,16 @@
 class_name MovementComponent
 extends Node
+# Movement component for handling player movement.
 
-@export var parent: Node
+var parent: Node
 
-var velocity: Vector2
-var max_speed: float = 10.0
-var acceleration: float = 10.0
-var deceleration: float = 10.0
+@export_category("Movement")
+@export var max_speed: float = 160.0
 
-func move(delta: float) -> void:
-	var direction = parent.get_input()
-	if direction.length() > 0:
-		velocity = direction * max_speed
-	else:
-		velocity = velocity.lerp(Vector2.ZERO, deceleration * delta)
+func _ready() -> void:
+	if parent == null:
+		parent = get_parent()
 
-	parent.position += velocity * delta
+func move(_delta: float, direction: Vector2) -> void:
+	parent.velocity = direction * max_speed
+	parent.move_and_slide()
